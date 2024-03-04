@@ -1,8 +1,11 @@
 import random
-r = random.randint(1, 100)
+start = int(input('plesase input a start number: '))
+end = int(input('plesase input an end number: '))
+r = random.randint(start, end)
+
 count = 0
 while True:
-    user = int(input('plesase input a number between 1 and 100: '))
+    user = int(input('plesase input a number between start and end: '))
     count += 1
     if user == r:
         print('you are right!')
